@@ -28,6 +28,10 @@ module.exports = {
       loader: 'style!css!autoprefixer'
     },
     {
+      test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000"
+    },
+    {
       test: /\.(jpe?g|png)$/,
       loader: 'file-loader'
     }]
