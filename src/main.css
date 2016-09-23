@@ -1,3 +1,6 @@
+a:hover,a:active,a:focus,a:visited{
+  text-decoration: none;
+}
 .content-wrap{
   height: 100vh;
   display: flex;
@@ -54,8 +57,8 @@
 
 .content-main{
   flex-grow: 1;
-  background-color:yellow;
   overflow-y: scroll;
+  display: flex;
 }
 .left-nav{
   display: flex;
@@ -63,5 +66,38 @@
   width: 260px;
   background-color: #00BCD4;
 }
-.left-nav a{ font-size: 24px; display: block;}
-.left-nav h3{text-align: center;font-weight: 600;color: #fff;font-size: 30px;}
+.left-nav a{ font-size: 20px; display: block;color: #fff;padding: 10px; padding-left: 55px;}
+.left-nav a:hover{background-color: rgba(0, 0, 0, 0.3);;text-decoration: none;}
+.left-nav h3{text-align: center;font-weight: 600;color: #fff;font-size: 30px}
+
+.home-container{
+  width: 100%;
+  display: flex;
+  background-image: url(./images/4.jpg);
+  background-size: cover;
+  background-size:100% 100%;
+
+}
+.home-cover{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+.home-cover p{font-weight: 600;margin-bottom: 10px;}
+.home-item{
+  color:#fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.home-item h2{font-size: 33px;font-weight: 600;}
+.home-btn{
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4081;
+  padding:8px 20px;
+  font-size: 16px;
+}
+.home-btn:hover{
+  background-color: #00bcd4;
+}
